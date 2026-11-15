@@ -342,5 +342,3 @@ For churn prediction, recall is particularly relevant when the business goal is 
 This project demonstrates practical skills in machine learning engineering and MLOps, including feature engineering, model serving, API development, containerization, testing, and CI/CD automation.
 
 The goal is to bridge the gap between training a machine learning model and making it usable through a reproducible application deployment workflow.
-![alt text](image.png)
-![alt text](image-1.png)
