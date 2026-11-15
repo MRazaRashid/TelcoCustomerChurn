@@ -1,0 +1,16 @@
+.venv/
+.git/
+.github/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/
+.gradio/
+mlruns/
+notebooks/
+data/
+tests/
+docs/
+.env
+.env.*
+*.zip

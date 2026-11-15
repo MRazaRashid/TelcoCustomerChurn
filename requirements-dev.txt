@@ -1,0 +1,21 @@
+
+# Include production dependencies
+-r requirements.txt
+
+# Notebooks
+ipykernel==6.30.1
+
+# Visualization and EDA
+matplotlib==3.10.5
+seaborn==0.13.2
+
+# Model experimentation
+optuna==4.4.0
+lightgbm==4.6.0
+
+# Testing
+pytest==8.3.2
+
+statsmodels==0.14.5
+great_expectations==1.5.8
+altair==4.2.2

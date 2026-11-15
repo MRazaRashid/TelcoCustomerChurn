@@ -1,0 +1,13 @@
+.venv/
+.venv-test/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/
+.gradio/
+mlruns/
+.env
+.env.*
+*.zip
+requirements-frozen.txt
+requirements-backup.txt
