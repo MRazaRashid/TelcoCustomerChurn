@@ -304,15 +304,12 @@ The workflow uses two GitHub repository secrets:
 
 The original notebook contains the training and evaluation workflow.
 
-Before publishing performance claims, record the measured results from the notebook:
-
 | Metric | Result |
 |---|---|
-| Accuracy | To be added |
-| Precision | To be added |
-| Recall | To be added |
-| F1-score | To be added |
-| ROC-AUC | To be added |
+| Accuracy | 0.664 |
+| Precision | 0.437 |
+| Recall | 0.922 |
+| F1-score | 0.60 |
 
 For churn prediction, recall is particularly relevant when the business goal is to identify customers at risk of leaving. Precision also matters because unnecessary retention interventions can create additional costs.
 
