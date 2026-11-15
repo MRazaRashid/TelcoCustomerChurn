@@ -26,7 +26,7 @@ The application provides:
 The interactive interface allows users to enter customer details
 and predict customer churn.
 
-![Gradio Prediction Interface and Churn Results ](Screenshots/image.png)(Screenshots/image-1.png)
+![Gradio Prediction Interface and Churn Results ](Screenshots/image.png)
 ## Technology Stack
 
 | Category | Technologies |
