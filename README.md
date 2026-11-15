@@ -19,7 +19,14 @@ The application provides:
 - A **Docker image** for reproducible deployment.
 - **Six automated tests** using pytest.
 - A **GitHub Actions CI/CD pipeline** that tests, builds, and publishes the Docker image.
+## Application Screenshots
 
+### Gradio Prediction Interface
+
+The interactive interface allows users to enter customer details
+and predict customer churn.
+
+![Gradio Prediction Interface and Churn Results ](Screenshots/image.png)(Screenshots/image-1.png)
 ## Technology Stack
 
 | Category | Technologies |
@@ -37,24 +44,18 @@ The application provides:
 
 ## System Architecture
 
-```mermaid
 flowchart TD
-    A[Customer Input] --> B[Gradio UI or FastAPI REST API]
-    B --> C[Pydantic Validation]
-    C --> D[Feature Engineering and Encoding]
-    D --> E[25 Ordered Model Features]
-    E --> F[MLflow-Loaded XGBoost Model]
-    F --> G[Churn Prediction]
+    A["Customer Input"] --> B["Gradio UI / FastAPI API"]
+    B --> C["Pydantic Validation"]
+    C --> D["Feature Engineering"]
+    D --> E["25 Model Features"]
+    E --> F["MLflow XGBoost Model"]
+    F --> G["Churn Prediction"]
 
-    H[GitHub Push] --> I[GitHub Actions]
-    I --> J[Automated Tests]
-    J -->|Pass| K[Docker Build]
-    K --> L[Docker Hub]
-```
-
-**Inference flow:** Customer input is validated, transformed into the 25 features expected by the trained model, and passed to XGBoost.
-
-**CI/CD flow:** GitHub Actions runs tests before building and publishing a new Docker image.
+    H["GitHub Push"] --> I["GitHub Actions"]
+    I --> J["Automated Tests"]
+    J -->|Pass| K["Docker Build"]
+    K --> L["Docker Hub"]
 
 ## Project Structure
 
@@ -344,3 +345,5 @@ For churn prediction, recall is particularly relevant when the business goal is 
 This project demonstrates practical skills in machine learning engineering and MLOps, including feature engineering, model serving, API development, containerization, testing, and CI/CD automation.
 
 The goal is to bridge the gap between training a machine learning model and making it usable through a reproducible application deployment workflow.
+![alt text](image.png)
+![alt text](image-1.png)
